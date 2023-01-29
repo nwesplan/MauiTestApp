@@ -1,4 +1,6 @@
-﻿namespace MauiTestApp;
+﻿using Maui.Models.ViewModels.Main;
+using Maui.Pages;
+namespace MauiTestApp;
 
 public static class MauiProgram
 {
@@ -12,7 +14,11 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-		
-		return builder.Build();
+
+		// Pages
+		builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<MainPageViewModel>();
+
+        return builder.Build();
 	}
 }
