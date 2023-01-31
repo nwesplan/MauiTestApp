@@ -1,6 +1,6 @@
-﻿using Maui.Models.ViewModels.Main;
+﻿using Maui.Content.ViewModels;
 
-namespace Maui.Pages;
+namespace Maui.Content.Pages;
 
 public partial class MainPage : ContentPage
 {

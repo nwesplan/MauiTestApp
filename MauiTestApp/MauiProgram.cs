@@ -1,5 +1,10 @@
-﻿using Maui.Models.ViewModels.Main;
-using Maui.Pages;
+﻿using Maui.Content.Pages;
+using Maui.Content.Pages.Test;
+using Maui.Content.Pages.Test.Checkbox;
+using Maui.Content.ViewModels;
+using Maui.Content.ViewModels.Test;
+using Maui.Content.ViewModels.Test.Checkbox;
+
 namespace MauiTestApp;
 
 public static class MauiProgram
@@ -19,6 +24,12 @@ public static class MauiProgram
 		builder.Services.AddSingleton<MainPage>();
         builder.Services.AddSingleton<MainPageViewModel>();
 
+        // Test Pages
+        builder.Services.AddScoped<MainTestComponentPage>();
+        builder.Services.AddScoped<MainTestComponentPageViewModel>();
+
+        builder.Services.AddScoped<CheckboxTestComponentPage>();
+        builder.Services.AddScoped<CheckboxTestComponentViewModel>();
         return builder.Build();
 	}
 }

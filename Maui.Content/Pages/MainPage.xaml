@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:test="clr-namespace:Maui.Components;assembly=Maui.Components"
-             x:Class="Maui.Pages.MainPage">
+             x:Class="Maui.Content.Pages.MainPage">
 
     <ScrollView>
         <VerticalStackLayout
@@ -35,7 +34,7 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
-            <test:NewContent1 />
+            <Button Text="Test Components" Command="{Binding TestComponentsPageCommand}" />
         </VerticalStackLayout>
     </ScrollView>
 

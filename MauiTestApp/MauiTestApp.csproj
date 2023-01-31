@@ -16,7 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.mauitestapp</ApplicationId>
-		<ApplicationIdGuid>1acf04f4-6031-49ef-be0c-c369931ecd22</ApplicationIdGuid>
+		<ApplicationIdGuid>1b5c312b-ad81-4df0-a3a4-8f97572a014f</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -49,18 +49,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Components\" />
-	  <Folder Include="Views\" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\Maui.Components\Maui.Components.csproj" />
+	  <ProjectReference Include="..\Maui.Content\Maui.Content.csproj" />
 	  <ProjectReference Include="..\Maui.Models\Maui.Models.csproj" />
-	  <ProjectReference Include="..\Maui.Pages\Maui.Pages.csproj" />
 	</ItemGroup>
 
 </Project>
