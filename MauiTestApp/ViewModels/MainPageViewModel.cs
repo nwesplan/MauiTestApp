@@ -1,13 +1,13 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Maui.Content.Pages.Test;
+using MauiTestApp.Views.Test;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Maui.Content.ViewModels
+namespace MauiTestApp.ViewModels
 {
     public partial class MainPageViewModel : ObservableObject
     {

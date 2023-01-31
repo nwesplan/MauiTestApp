@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.Models", "Maui.Models\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.Services", "Maui.Services\Maui.Services.csproj", "{5C0E768F-7606-4EE7-9FAC-10D2108D9DDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.Content", "Maui.Content\Maui.Content.csproj", "{65DAD9B8-ECC5-4225-BDF7-201970BDCC86}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,10 +29,6 @@ Global
 		{5C0E768F-7606-4EE7-9FAC-10D2108D9DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C0E768F-7606-4EE7-9FAC-10D2108D9DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C0E768F-7606-4EE7-9FAC-10D2108D9DDD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65DAD9B8-ECC5-4225-BDF7-201970BDCC86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65DAD9B8-ECC5-4225-BDF7-201970BDCC86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65DAD9B8-ECC5-4225-BDF7-201970BDCC86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65DAD9B8-ECC5-4225-BDF7-201970BDCC86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

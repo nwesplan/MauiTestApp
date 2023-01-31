@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Maui.Content.Pages.Test.Checkbox;
 using Maui.Models.Routing;
+using MauiTestApp.Views.Test.Checkbox;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Maui.Content.ViewModels.Test
+namespace MauiTestApp.ViewModels.Test
 {
     public partial class MainTestComponentPageViewModel : ObservableObject
     {
@@ -31,7 +31,7 @@ namespace Maui.Content.ViewModels.Test
                     await Shell.Current.GoToAsync(routeModel.Route);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 // show error
             }

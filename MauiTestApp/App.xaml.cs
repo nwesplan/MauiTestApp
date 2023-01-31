@@ -1,5 +1,5 @@
-﻿using Maui.Content.Pages.Test;
-using Maui.Content.Pages.Test.Checkbox;
+﻿using MauiTestApp.Views.Test;
+using MauiTestApp.Views.Test.Checkbox;
 
 namespace MauiTestApp;
 

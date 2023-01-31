@@ -1,9 +1,11 @@
-﻿using Maui.Content.Pages;
-using Maui.Content.Pages.Test;
-using Maui.Content.Pages.Test.Checkbox;
-using Maui.Content.ViewModels;
-using Maui.Content.ViewModels.Test;
-using Maui.Content.ViewModels.Test.Checkbox;
+﻿using CommunityToolkit.Maui;
+using Maui.Services.Notifications;
+using MauiTestApp.ViewModels;
+using MauiTestApp.ViewModels.Test;
+using MauiTestApp.ViewModels.Test.Checkbox;
+using MauiTestApp.Views;
+using MauiTestApp.Views.Test;
+using MauiTestApp.Views.Test.Checkbox;
 
 namespace MauiTestApp;
 
@@ -14,6 +16,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.UseMauiCommunityToolkit()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -30,6 +33,10 @@ public static class MauiProgram
 
         builder.Services.AddScoped<CheckboxTestComponentPage>();
         builder.Services.AddScoped<CheckboxTestComponentViewModel>();
+
+		// Services
+		builder.Services.AddSingleton<IToastService, ToastService>();
+
         return builder.Build();
 	}
 }
